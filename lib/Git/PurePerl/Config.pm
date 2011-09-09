@@ -1,12 +1,12 @@
 package Git::PurePerl::Config;
-use Moose;
-use MooseX::StrictConstructor;
-use Moose::Util::TypeConstraints;
+use Mouse;
+use MouseX::StrictConstructor;
+use Mouse::Util::TypeConstraints;
 use namespace::autoclean;
 
 extends 'Config::GitLike';
 
-has '+confname' => ( default => "gitconfig" );
+has 'confname' => ( is=>'ro', default => "gitconfig" );
 has 'git'       => ( is => 'ro', isa => 'Git::PurePerl', required => 1, weak_ref => 1 );
 
 override dir_file => sub {

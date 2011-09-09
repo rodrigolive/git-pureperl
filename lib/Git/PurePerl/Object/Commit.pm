@@ -1,7 +1,7 @@
 package Git::PurePerl::Object::Commit;
-use Moose;
-use MooseX::StrictConstructor;
-use Moose::Util::TypeConstraints;
+use Mouse;
+use MouseX::StrictConstructor;
+use Mouse::Util::TypeConstraints;
 use Encode qw/decode/;
 use namespace::autoclean;
 

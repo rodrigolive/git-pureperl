@@ -1,6 +1,6 @@
 package Git::PurePerl::PackIndex::Version1;
-use Moose;
-use MooseX::StrictConstructor;
+use Mouse;
+use MouseX::StrictConstructor;
 use namespace::autoclean;
 
 extends 'Git::PurePerl::PackIndex';

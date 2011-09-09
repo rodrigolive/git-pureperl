@@ -1,7 +1,7 @@
 package Git::PurePerl::Object;
-use Moose;
-use MooseX::StrictConstructor;
-use Moose::Util::TypeConstraints;
+use Mouse;
+use MouseX::StrictConstructor;
+use Mouse::Util::TypeConstraints;
 use namespace::autoclean;
 
 enum 'ObjectKind' => qw(commit tree blob tag);

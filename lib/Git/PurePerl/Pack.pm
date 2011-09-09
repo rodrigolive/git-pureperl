@@ -1,7 +1,7 @@
 package Git::PurePerl::Pack;
-use Moose;
-use MooseX::StrictConstructor;
-use MooseX::Types::Path::Class;
+use Mouse;
+use MouseX::StrictConstructor;
+use MouseX::Types::Path::Class;
 use Compress::Raw::Zlib;
 use IO::File;
 use namespace::autoclean;

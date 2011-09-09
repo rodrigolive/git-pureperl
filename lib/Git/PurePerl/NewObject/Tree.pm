@@ -1,7 +1,7 @@
 package Git::PurePerl::NewObject::Tree;
-use Moose;
-use MooseX::StrictConstructor;
-use Moose::Util::TypeConstraints;
+use Mouse;
+use MouseX::StrictConstructor;
+use Mouse::Util::TypeConstraints;
 use namespace::autoclean;
 
 extends 'Git::PurePerl::NewObject';

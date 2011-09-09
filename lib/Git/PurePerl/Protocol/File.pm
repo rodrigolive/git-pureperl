@@ -1,7 +1,7 @@
 package Git::PurePerl::Protocol::File;
-use Moose;
-use MooseX::StrictConstructor;
-use Moose::Util::TypeConstraints;
+use Mouse;
+use MouseX::StrictConstructor;
+use Mouse::Util::TypeConstraints;
 use IPC::Open2;
 use namespace::autoclean;
 

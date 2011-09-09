@@ -1,7 +1,7 @@
 package Git::PurePerl;
-use Moose;
-use MooseX::StrictConstructor;
-use MooseX::Types::Path::Class;
+use Mouse;
+use MouseX::StrictConstructor;
+use MouseX::Types::Path::Class;
 use Compress::Zlib qw(uncompress);
 use Data::Stream::Bulk;
 use Data::Stream::Bulk::Array;

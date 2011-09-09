@@ -1,10 +1,10 @@
 package Git::PurePerl::NewObject;
-use Moose;
-use MooseX::StrictConstructor;
-use Moose::Util::TypeConstraints;
+use Mouse;
+use MouseX::StrictConstructor;
+use Mouse::Util::TypeConstraints;
 use namespace::autoclean;
 
-enum 'ObjectKind' => qw(commit tree blob tag);
+#enum 'ObjectKind' => qw(commit tree blob tag);
 
 has 'kind' => ( is => 'ro', isa => 'ObjectKind', required => 1 );
 has 'size' => ( is => 'ro', isa => 'Int', required => 0, lazy_build => 1 );
